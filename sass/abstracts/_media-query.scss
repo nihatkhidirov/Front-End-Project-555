@@ -1,0 +1,10 @@
+@mixin homePage($maxSize) {
+  @media screen and (max-width: $maxSize) {
+    @content;
+  }
+}
+@mixin homeMedia($minSize) {
+  @media screen and (min-width: $minSize) {
+    @content;
+  }
+}

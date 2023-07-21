@@ -1,0 +1,33 @@
+.swipper {
+  width: 100%;
+  &-child {
+    margin-left: 14px;
+  }
+  .swipper-child {
+    img {
+      margin-left: 55px;
+    }
+  }
+  .swipper-childinner {
+    p {
+      color: grey;
+      margin-left: 20px;
+      font-size: 15px;
+      padding-top: 15px;
+    }
+    .star-area {
+      margin-left: 90px;
+    }
+    i {
+      color: #f2b519;
+    }
+  }
+}
+
+.swipper-2 {
+  margin-left: 40px;
+  width: 90%;
+  &-article {
+    margin-left: 14px;
+  }
+}

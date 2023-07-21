@@ -1,0 +1,47 @@
+@import "../abstracts/index";
+.header-btn {
+  background-color: white;
+  border: 1px;
+  border-radius: 80%;
+  padding: 10px 17px;
+  vertical-align: middle;
+}
+.nav-btn {
+  border: 1px solid darkred;
+  background-color: darkred;
+  border-radius: 30px;
+  padding: 10px 20px;
+  color: white;
+  margin: 0px 0px 0px 20px;
+  align-self: center;
+  justify-self: flex-end;
+  right: -300%;
+
+  @include homePage(576px) {
+    display: none;
+  }
+}
+.nav-btn:hover {
+  background-color: whitesmoke;
+  color: black;
+  border: none;
+}
+.header-btn:hover {
+  background-color: darkred;
+  color: white;
+}
+.Banner-btn {
+  border: 1px solid darkred;
+  background-color: darkred;
+  border-radius: 30px;
+  padding: 17px 30px;
+  color: white;
+  margin: 0px 0px 0px 20px;
+  font-weight: 700;
+  font-size: 20px;
+}
+.Banner-btn:hover {
+  color: black;
+  background-color: rgb(231, 207, 207);
+  border: none;
+}

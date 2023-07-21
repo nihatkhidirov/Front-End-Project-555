@@ -1,0 +1,13 @@
+$base: 4px;
+$fonts: (
+  lg: 24px,
+  md: 20px,
+  normal: 18px,
+  sm: 16px,
+  xs: 12px,
+);
+@each $fontKey, $fontValue in $fonts {
+  .font-#{$fontKey} {
+    font-size: $fontValue;
+  }
+}

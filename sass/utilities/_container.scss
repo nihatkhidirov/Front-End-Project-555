@@ -1,0 +1,156 @@
+@import "../abstracts/variables";
+
+.container-1 {
+  width: 95%;
+  margin: 0px auto;
+  margin-top: 200px;
+}
+.container-2 {
+  width: 95%;
+  margin: 0px auto;
+  margin-top: 80px;
+}
+.container-3 {
+  width: 90%;
+  margin: 0px auto;
+  margin-top: 40px;
+}
+.section-1 {
+  margin-top: -100px;
+}
+.section-2 {
+  margin-top: 80px;
+}
+.container-4 {
+  width: 90%;
+  margin: 0px auto;
+  margin-top: 100px;
+}
+.section-team {
+  margin-top: 100px;
+}
+.container-teambanner {
+  width: 90%;
+  margin: 0px auto;
+  margin-top: 80px;
+}
+.portfolio-section {
+  margin-top: -170px;
+}
+.portfolio-container {
+  width: 90%;
+  margin: 0px auto;
+}
+.acation-container {
+  width: 95%;
+  margin: 0px auto;
+}
+.area-testimonials {
+  margin-top: 160px;
+
+  .container-testimonials {
+    width: 95%;
+    margin: 0px auto;
+  }
+}
+.business-progress {
+  height: 750px;
+  margin-top: 130px;
+  position: relative;
+}
+.Progress-container {
+  width: 1140px;
+  height: 70px;
+  margin: 0px auto;
+}
+
+.bottom {
+  margin-top: 60px;
+  .bottom-container {
+    width: 95%;
+    margin: 0px auto;
+  }
+}
+
+.footer-container {
+  position: relative;
+  margin: 0px auto;
+  width: 95%;
+  height: 730px;
+}
+.banner-area-contact {
+  margin-top: 220px;
+  width: 1600px;
+  height: 400px;
+  background-image: url(../../assets/imagecontact/contctbanner.jpg);
+  .contact-container {
+    padding-top: 170px;
+    width: 80%;
+    margin: 0px auto;
+  }
+}
+.container-gap {
+  width: 1140px;
+  height: 385px;
+  margin: 0px auto;
+  margin-right: 210px;
+  .imagegap {
+    display: block;
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+    img {
+      width: 100%;
+    }
+  }
+}
+.google-map {
+  margin-top: 40px;
+}
+.contact-form {
+  margin-top: 30px;
+  width: 1390px;
+  height: 770px;
+  .form-container {
+    width: 1140px;
+    height: 770px;
+    margin-left: 195px;
+  }
+}
+
+.blog-section {
+  padding: 120px 0;
+  width: 1600px;
+  height: 3280px;
+  @include homePage(945px) {
+    display: flex;
+    flex-direction: column;
+  }
+  .blog-container {
+    width: 1340px;
+    height: 3150px;
+    margin-left: 120px;
+    @include homePage(945px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+.blog-section-sec {
+  padding: 120px 0;
+  width: 1600px;
+  height: 3880px;
+  @include homePage(945px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .blog-container-sec {
+    width: 1340px;
+    height: 3750px;
+    margin-left: 120px;
+    @include homePage(945px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

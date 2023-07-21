@@ -1,0 +1,156 @@
+@import "../components/index";
+@import "../abstracts/index";
+@import "../base/index";
+
+header {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0px;
+}
+.header-bc {
+  background-color: white;
+  transition: 0.3s linear;
+  top: 0px !important;
+}
+.header-btn-scroll {
+  background-color: white !important;
+}
+.header-firstpart {
+  padding: 12px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #5d666f27;
+
+  .left {
+    padding-top: 35px;
+    font-size: 16px;
+    width: 50%;
+    text-align: center;
+    p {
+      color: black;
+      font: 18px;
+    }
+  }
+  .right {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    i {
+      font-size: 16px;
+    }
+    a {
+      font-weight: 500;
+      color: black;
+    }
+  }
+  .mail {
+    display: flex;
+    column-gap: 10px;
+  }
+  .phone {
+    display: flex;
+    column-gap: 10px;
+  }
+  @include homePage(1200px) {
+    display: none;
+  }
+}
+.header-secondpart {
+  z-index: 20;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+}
+.logo {
+  padding: 36px 0px;
+  position: absolute;
+  cursor: pointer;
+  left: 15%;
+  @include homePage(1100px) {
+    left: 10%;
+  }
+  @include homePage(800px) {
+    left: 5%;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+.nav-sec {
+  width: 70%;
+  display: flex;
+  column-gap: 20px;
+  justify-content: space-evenly;
+  position: relative;
+
+  .nav-list {
+    display: flex;
+    column-gap: 100px;
+    li {
+      font-size: 25px;
+      padding: 48px 0px;
+      font: 16px;
+      font-weight: 500;
+      color: #1c2539;
+    }
+    a {
+      color: black;
+      transition: 0.3s;
+      font-size: 22px;
+    }
+    a::after {
+      content: "";
+      width: 0px;
+      height: 2px;
+      display: block;
+      background: $main-red;
+      transition: 300ms;
+    }
+    a:hover::after {
+      width: 100%;
+    }
+
+    a:hover {
+      color: $main-red;
+    }
+
+    @include homePage(1200px) {
+      display: none;
+    }
+  }
+
+  .header-btn-area {
+    margin-top: -20px;
+    align-self: center;
+    display: flex;
+    column-gap: 20px;
+
+    @include homePage(1200px) {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+    }
+  }
+}
+.nav-btn-scroll {
+  border: 1px solid $main_red;
+  background-color: $main_red;
+  border-radius: 30px;
+  padding: 17px 30px;
+  color: white;
+  margin: 0px 0px 0px 20px;
+  align-self: center;
+  justify-self: flex-end;
+  right: -300%;
+  transition: 0.2s linear;
+  &:hover {
+    color: black;
+    border: 1px solid #f6f6f6;
+    background-color: #f6f6f6;
+  }
+}
